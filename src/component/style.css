@@ -1,0 +1,27 @@
+.repo-post{
+    height: 100px;
+    background: #444444;
+    padding: 15px;
+    width: auto;
+    overflow: hidden;
+}
+
+.repo-post:hover{
+    background: #686868;
+}
+
+.repo-post .h4{
+    font-weight: bolder;
+}
+
+.post-container{
+    height: 430px;
+}
+
+.post-container a{
+    color: white;
+} 
+
+.post-container a:hover{
+    color: white;
+}
