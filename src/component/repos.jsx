@@ -21,6 +21,10 @@ export default function Repos(){
         return (
             <Col sm={6}>
                 <Container className="post-container text-left overflow-auto">
+                    <p>
+                        My Repos and Forks
+                    </p>
+
                     {
                         value.map((element,key) => <Post key={key} subject={element.name} description={element.description} />)
                     }
