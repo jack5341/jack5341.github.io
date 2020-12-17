@@ -1,8 +1,9 @@
-import {useState,useEffect} from 'react'
+import {useState,useEffect,useContext} from 'react'
 import axios from 'axios'
 import {Container,Col} from 'react-bootstrap'
 import Post from './repo-post/post'
 import './style.css'
+import {LanguageContext} from '../context/Language'
 
 export default function Repos(){
     
@@ -17,18 +18,21 @@ export default function Repos(){
         })
     },[]);    
 
+    const lang = useContext(LanguageContext)
+
     if(value){
         return (
             <Col sm={6}>
                 <Container className="post-container text-left overflow-auto">
                     <p>
-                        My Repos and Forks
+                        {(lang === "en") ? ("My Repositories and Forks") :
+                         (lang === "de") ? ("Meine Repositories und Forks") :
+                         (lang === "tr") ? ("Repolarım ve Forklarım") : undefined}
                     </p>
 
                     {
                         value.map((element,key) => <Post key={key} subject={element.name} description={element.description} />)
                     }
-                    {/* <Post subject={null} description={null} /> */}
                 </Container>
             </Col>
         )

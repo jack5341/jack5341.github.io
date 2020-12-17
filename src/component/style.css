@@ -25,3 +25,22 @@
 .post-container a:hover{
     color: white;
 }
+
+.btn{
+    background: white !important;
+    color: black !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.btn:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.dropdown-menu{
+    width: 182px !important;
+    border: 0px !important;
+    border-radius: 0px !important;
+    margin-top: -2px !important;
+}
