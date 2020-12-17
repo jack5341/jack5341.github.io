@@ -1,13 +1,21 @@
-import {useContext} from 'react'
+import {useEffect,useContext,useState} from 'react'
 import {Figure,Col} from 'react-bootstrap'
-import Pp from '../assets/pp.jpg'
+import axios from 'axios'
 import {LanguageContext} from '../context/Language'
 
 export default function Body(){
 
     const value = useContext(LanguageContext)
+    const [avatar,setAvatar] = useState()
 
-    console.log(value)
+    useEffect(() => {
+        axios({
+            url: "https://api.github.com/users/jack5341",
+            method: "GET"
+        }).then((res) => {
+            setAvatar(res.data.avatar_url)
+        })
+    },[])
 
     return (
         <Col sm={6}>
@@ -16,7 +24,7 @@ export default function Body(){
                     width={200}
                     height={200}
                     alt="171x180"
-                    src={Pp}
+                    src={avatar}
                 />
                 <Figure.Caption className="text-light">
                     Nedim Akar <br/>
