@@ -17,7 +17,6 @@ export default function LanguageDown(){
                 window.location.pathname = "lang=" + "tr"
                 break
         }
-        
     }
 
     return (
