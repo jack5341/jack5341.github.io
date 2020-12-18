@@ -42,8 +42,8 @@ export default function Body(){
                     <p className="small">
                         {
                             (value === "en") ? ("Hi, my name is Nedim Akar.I am learning programming since 2017. As the part of learning process, I made more than 5 web application and few of them can be defined as complex projects.Repository of the projects are available on my Github profile.") : 
-                            (value === "de") ? ("Hallo, mein Name is Nedim Akar.Ich lerne seit 2017 Programmieren.Als Teil des Lernprozesses,Ich habe mehr als 5 Webanwendungen erstellt und einige davon können als komplexe Projekte definiert werden.Das Repository der Projekte ist in meinem Github-Profil verfügbar."):
-                            (value === "tr") ? (" Merhaba, benim adım Nedim Akar.2017 den beri programlama öğreniyorum.Bu süreçte,5 den fazla kompleks denilebilecek web projelerim oldu.Projelerimi Github hesabımda bulabilirsiniz !"): undefined
+                            (value === "de") ? ("Hallo, mein Name ist Nedim Akar. Ich lerne seit 2017 programmieren. Als Teil des Lernprozesses, habe ich mehr als 5 Webanwendungen erstellt und einige davon können als komplexe Projekte definiert werden. Das Repository der Projekte ist in meinem Github-Profil verfügbar."):
+                            (value === "tr") ? ("Merhaba, benim adım Nedim Akar.2017 den beri programlama öğreniyorum.Bu süreçte,5 den fazla kompleks denilebilecek web projelerim oldu.Projelerimi Github hesabımda bulabilirsiniz !"): undefined
                         }
                     </p>
                     <a className="text-light" target="_blank" rel="noreferrer" href="https://steamcommunity.com/id/jack5341">
