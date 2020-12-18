@@ -31,7 +31,11 @@ function App() {
   return (
     <LanguageContext.Provider value={lang}>
       <Container className="text-light text-center mt-3 mb-3">
-        <DropdownButton style={{background: "none !important",color: "white !important"}} id="dropdown-item-button" className="mb-5" title="Choose Language">
+        <DropdownButton style={{background: "none !important",color: "white !important"}} id="dropdown-item-button" className="mb-5" title={
+          (lang === "en") ? ("Choose language") :
+          (lang === "de") ? ("Sprache wählen") :
+          (lang === "tr") ? ("Dilinizi seçiniz") : undefined
+        }>
           <Dropdown.Item id="en" onClick={changeLanguage}>English - EN</Dropdown.Item>
           <Dropdown.Item id="de" onClick={changeLanguage}>Deutsch - DE</Dropdown.Item>
           <Dropdown.Item id="tr" onClick={changeLanguage}>Türkçe - TR</Dropdown.Item>
