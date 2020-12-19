@@ -55,6 +55,9 @@ export default function Body(){
                     <a className="text-light" href="https://www.linkedin.com/in/nedim-akar-9a4982189/" target="_blank" rel="noreferrer">
                         <i className="fab fa-linkedin"></i>
                     </a>
+                     <a className="text-light" href="https://open.spotify.com/user/c0fk9u5rl5t70j643k3la0swo?si=8ta-JhcDRWaXWKu1ii3yFg" target="_blank" rel="noreferrer">
+                        <i class="fab fa-spotify"></i>
+                    </a>
                 </Figure.Caption>
             </Figure>
         </Col>
