@@ -38,14 +38,6 @@ export default function Body(){
                          (value === "tr") ? ("Junior Geliştirici") : undefined}
                     </small>
                     </p>
-                    <hr className="hr bg-white"></hr>
-                    <p className="small">
-                        {
-                            (value === "en") ? ("Hi, my name is Nedim Akar.I am learning programming since 2017. As the part of learning process, I made more than 5 web application and few of them can be defined as complex projects.Repository of the projects are available on my Github profile.") : 
-                            (value === "de") ? ("Hallo, mein Name ist Nedim Akar. Ich lerne seit 2017 programmieren. Als Teil des Lernprozesses, habe ich mehr als 5 Webanwendungen erstellt und einige davon können als komplexe Projekte definiert werden. Das Repository der Projekte ist in meinem Github-Profil verfügbar."):
-                            (value === "tr") ? ("Merhaba, benim adım Nedim Akar.2017 den beri programlama öğreniyorum.Bu süreçte,5 den fazla kompleks denilebilecek web projelerim oldu.Projelerimi Github hesabımda bulabilirsiniz !"): undefined
-                        }
-                    </p>
                     <a className="text-light" target="_blank" rel="noreferrer" href="https://steamcommunity.com/id/jack5341">
                         <i className="fab fa-steam"></i>
                     </a>
@@ -58,6 +50,17 @@ export default function Body(){
                      <a className="text-light" href="https://open.spotify.com/user/c0fk9u5rl5t70j643k3la0swo?si=8ta-JhcDRWaXWKu1ii3yFg" target="_blank" rel="noreferrer">
                         <i class="fab fa-spotify"></i>
                     </a>
+                    <a className="text-light" href="https://www.facebook.com/nedim.akar.9822/" target="_blank" rel="noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <hr className="hr bg-white"></hr>
+                    <p className="small">
+                        {
+                            (value === "en") ? ("Hi, my name is Nedim Akar.I am learning programming since 2017. As the part of learning process, I made more than 5 web application and few of them can be defined as complex projects.Repository of the projects are available on my Github profile.") : 
+                            (value === "de") ? ("Hallo, mein Name ist Nedim Akar. Ich lerne seit 2017 programmieren. Als Teil des Lernprozesses, habe ich mehr als 5 Webanwendungen erstellt und einige davon können als komplexe Projekte definiert werden. Das Repository der Projekte ist in meinem Github-Profil verfügbar."):
+                            (value === "tr") ? ("Merhaba, benim adım Nedim Akar.2017 den beri programlama öğreniyorum.Bu süreçte,5 den fazla kompleks denilebilecek web projelerim oldu.Projelerimi Github hesabımda bulabilirsiniz !"): undefined
+                        }
+                    </p>
                 </Figure.Caption>
             </Figure>
         </Col>
