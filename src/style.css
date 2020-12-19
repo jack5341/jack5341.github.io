@@ -28,3 +28,7 @@ i{
   color: white !important;
   background: none !important;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

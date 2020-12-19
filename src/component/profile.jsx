@@ -21,6 +21,8 @@ export default function Body(){
         <Col sm={6}>
             <Figure className="text-center">
                 <Figure.Image
+                    className="rounded-pill"
+                    style={{border: "3px solid white"}}
                     width={200}
                     height={200}
                     alt="171x180"
