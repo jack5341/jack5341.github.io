@@ -31,7 +31,7 @@ export default function Body(){
                 <Figure.Caption className="text-light">
                     Nedim Akar <br/>
                     <p>
-                    <a target="_blank" rel="noreferrer" href="https://github.com/jack5341">
+                    <a style={{color: "#b5d9ff"}} target="_blank" rel="noreferrer" href="https://github.com/jack5341">
                         (jack5341)
                     </a><br/>
                     <small>

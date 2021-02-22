@@ -23,13 +23,12 @@ export default function Repos(){
     if(value){
         return (
             <Col sm={6}>
+                <p className="title">
+                    {(lang === "en") ? ("My Repositories and Forks") :
+                        (lang === "de") ? ("Meine Repositories und Forks") :
+                        (lang === "tr") ? ("Repolarım ve Forklarım") : undefined}
+                </p>
                 <Container className="post-container text-left overflow-auto">
-                    <p>
-                        {(lang === "en") ? ("My Repositories and Forks") :
-                         (lang === "de") ? ("Meine Repositories und Forks") :
-                         (lang === "tr") ? ("Repolarım ve Forklarım") : undefined}
-                    </p>
-
                     {
                         value.map((element,key) => <Post key={key} subject={element.name} description={element.description} />)
                     }

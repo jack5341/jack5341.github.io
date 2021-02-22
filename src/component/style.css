@@ -1,13 +1,23 @@
+
+.title{
+    text-align: left;
+    padding-left: 2rem;
+}
+
 .repo-post{
-    height: 100px;
-    background: #444444;
+    height: auto;
+    background: #00000059;
+    margin: 1rem;
     padding: 15px;
     width: auto;
     overflow: hidden;
+    border-radius: 10px;
+    transition: 200ms;
 }
 
 .repo-post:hover{
-    background: #686868;
+    background: #00000082;
+    transform:scale(1.1,1.1) skew(-3deg,0deg);
 }
 
 .repo-post .h4{
